@@ -1042,7 +1042,7 @@ img{
     }
 
     .services__container{
-        grid-template-columns: repeat(2, 1fr);
+        grid-template-columns: max-content;
         justify-content: center;
     }
     .services__content{
