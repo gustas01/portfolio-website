@@ -109,7 +109,6 @@ let swiperPortfolio = new Swiper('.portfolio__container', {
     pagination: {
         el: '.swiper-pagination',
         clickable: true,
-
     },
   
 });
