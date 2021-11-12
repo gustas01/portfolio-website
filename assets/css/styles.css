@@ -532,17 +532,17 @@ img{
 }
 
 /* skills backend */
-.skills__java{
-    width: 20%;   
-}
 .skills__node{
-    width: 30%;   
+    width: 40%;   
+}
+.skills__sequelize{
+    width: 20%;   
 }
 .skills__sql{
     width: 30%;   
 }
-.skills__csharp{
-    width: 5%;   
+.skills__express{
+    width: 20%;   
 }
 
 
