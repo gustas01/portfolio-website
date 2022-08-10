@@ -330,6 +330,7 @@ img{
 
 .home__description{
     margin-bottom: var(--mb-2);
+    text-align: justify;
 }
 
 .home__scroll{
@@ -419,7 +420,7 @@ img{
 }
 
 .about__description{
-    text-align: center;
+    text-align: justify;
     margin-bottom: var(--mb-2-5);
 }
 
@@ -532,17 +533,17 @@ img{
 }
 
 /* skills backend */
-.skills__java{
-    width: 20%;   
-}
 .skills__node{
-    width: 30%;   
+    width: 40%;   
+}
+.skills__sequelize{
+    width: 20%;   
 }
 .skills__sql{
     width: 30%;   
 }
-.skills__csharp{
-    width: 5%;   
+.skills__express{
+    width: 20%;   
 }
 
 
