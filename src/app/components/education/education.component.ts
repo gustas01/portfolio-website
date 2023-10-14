@@ -8,18 +8,18 @@ import { Component } from '@angular/core';
 export class EducationComponent {
   public education = [
     {
+      course: 'Ciência da Computação',
+      period: 'Mar 2019/dez 2021',
+      university: 'UNIFEI - Universidade Federal de Itajubá',
+      status: `Incompleto`,
+      side: 'left',
+    },
+    {
       course: 'Bacharel em Ciência e Tecnologia',
       period: 'Mar 2013/set 2017',
       university:
         'UFVJM - Universidade Federal dos Vales do Jequitinhonha e Mucuri',
       status: `Graduado`,
-      side: 'left',
-    },
-    {
-      course: 'Ciência da Computação',
-      period: 'Mar 2019/dez 2021',
-      university: 'UNIFEI - Universidade Federal de Itajubá',
-      status: `Incompleto`,
       side: 'right',
     },
     {
