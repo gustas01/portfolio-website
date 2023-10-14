@@ -1,0 +1,21 @@
+@import '../../../styles.scss';
+mat-expansion-panel{
+  margin-bottom: 8px;
+  background-color: $primary-color;
+
+  a{
+    text-decoration: none;
+    color: gray;
+  }
+
+  span{
+    display: flex;
+    justify-content: space-between;
+    gap: 8px;
+  }
+}
+
+
+.mat-accordion>.mat-expansion-panel-spacing:last-child{
+  margin-bottom: 8px;
+}
