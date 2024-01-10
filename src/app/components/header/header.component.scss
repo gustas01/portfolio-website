@@ -45,18 +45,17 @@ mat-card{
     position: relative;
 
     img{
-      height: 100%;
-      width: 100%;;
+      height: calc(100% - 2px);
+      width: calc(100% - 2px);
       top: 0;
       left: 0;
       right: 0;
       bottom: 0;
       position: absolute;
       border: none;
-    }
-
-    &:hover{
-      border: 1px dashed #dcdcdc;
+      z-index: 10;
+      display: block;
+      margin: auto;
     }
   }
 
@@ -80,5 +79,37 @@ mat-card{
       align-items: center;
       gap: 8px;
     }
+  }
+}
+
+.round-button-links{
+  overflow: hidden;
+  
+  &::before{
+    position: absolute;
+    content: '';
+    width: 50%;
+    height: 120%;
+    background-color: #fff;
+    top: -10%;
+    left: 25%;
+    transform: rotate(45deg);
+  }
+
+  &:hover::before{
+    animation: spinning 2s linear infinite;
+  }
+
+  &::after{
+    position: absolute;  
+    content: '';
+    background-color: #222;
+    border-radius: 50%;
+    inset: 2px;
+  }
+
+  @keyframes spinning{
+    from{ transform: rotate(45deg);}
+    to{ transform: rotate(360deg);}
   }
 }
