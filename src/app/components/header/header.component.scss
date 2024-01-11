@@ -110,6 +110,32 @@ mat-card{
 
   @keyframes spinning{
     from{ transform: rotate(45deg);}
-    to{ transform: rotate(360deg);}
+    to{ transform: rotate(405deg);}
+  }
+}
+
+.square-button-link{
+
+  &::before{
+    position: absolute;
+    content: ''; 
+    height: 36px;
+    width: 161px;
+    background-color: #ee7;
+    border-radius: 8px;
+    z-index: -1;
+    transition: 0.2s;
+    animation: color-changing 2s infinite;
+  }
+
+  &:hover::before{
+    height: 40px;
+    width: 165px;
+  }
+
+  @keyframes color-changing{
+    50%{
+      filter: hue-rotate(350deg);
+    }
   }
 }
