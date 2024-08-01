@@ -1,17 +1,17 @@
 <!-- <h1>Experiências</h1> -->
 <div class="timeline" *ngFor="let exp of experiences">
-  <div class='container' [ngClass]="exp.side">
+  <div class="container" [ngClass]="exp.side">
     <div class="content">
       <div class="title-period">
-        <h2>{{exp.role}}</h2>
-        <h5>{{exp.period}}</h5>
+        <h3>{{ exp.role }}</h3>
+        <h5>{{ exp.period }}</h5>
       </div>
-      <h4>{{exp.company}}</h4>
-      <p>{{exp.description}}</p>
+      <h4>{{ exp.company }}</h4>
+      <p>{{ exp.description }}</p>
       <h4>Tecnologias Utilizadas</h4>
-      <ul>
+      <ul aria-label="Lista de habilidades desenvolvidas no cargo">
         <li *ngFor="let tech of exp.technologies">
-          {{tech}}
+          {{ tech }}
         </li>
       </ul>
     </div>

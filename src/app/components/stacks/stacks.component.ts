@@ -23,24 +23,29 @@ export class StacksComponent {
       path: '../../../assets/icons/stacks/angular_icon.svg',
     },
     {
-      name: 'React',
-      svgName: 'react',
-      path: '../../../assets/icons/stacks/react_icon.svg',
-    },
-    {
       name: 'Typescript',
       svgName: 'typescript',
       path: '../../../assets/icons/stacks/typescript_icon.svg',
     },
     {
-      name: 'Javascript',
-      svgName: 'javascript',
-      path: '../../../assets/icons/stacks/javascript_icon.svg',
+      name: 'Spring',
+      svgName: 'spring',
+      path: '../../../assets/icons/stacks/spring_icon.svg',
+    },
+    {
+      name: 'Java',
+      svgName: 'java',
+      path: '../../../assets/icons/stacks/java_icon.svg',
     },
     {
       name: 'Jest',
       svgName: 'jest',
       path: '../../../assets/icons/stacks/jest_icon.svg',
+    },
+    {
+      name: 'JUnit',
+      svgName: 'junit',
+      path: '../../../assets/icons/stacks/junit_icon.svg',
     },
     {
       name: 'PostgreSQL',

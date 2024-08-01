@@ -1,12 +1,12 @@
 <!-- <h1>Experiências</h1> -->
-<div class="timeline" *ngFor="let exp of education">
-  <div class='container' [ngClass]="exp.side">
+<div class="timeline" *ngFor="let course of education">
+  <div class="container" [ngClass]="course.side">
     <div class="content">
       <div class="title-period">
-        <h2>{{exp.course}}</h2>
-        <h5>{{exp.period}} - {{exp.status}}</h5>
+        <h3>{{ course.name }}</h3>
+        <h5>{{ course.period }} - {{ course.status }}</h5>
       </div>
-      <h4>{{exp.university}}</h4>
+      <h4>{{ course.university }}</h4>
     </div>
   </div>
 </div>

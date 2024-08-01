@@ -8,6 +8,15 @@ import { Component } from '@angular/core';
 export class ExperiencesComponent {
   public experiences = [
     {
+      role: 'Trainee de desenvolvimento fullstack',
+      period: 'Abr 2024–até o momento',
+      company: 'FCAMARA - Consultoria e formação em Informática',
+      description: `Estudo desenvolvimento fullstack para me aprimorar e contribuir no desenvolvimento de soluções
+      funcionais, escaláveis e consistentes.`,
+      technologies: ['Spring', 'Java', 'Angular', 'Typescript'],
+      side: 'left',
+    },
+    {
       role: 'Desenvolvedor Júnior',
       period: 'Mar 2022–Ago 2022',
       company: 'Luz - Soluções Financeiras',

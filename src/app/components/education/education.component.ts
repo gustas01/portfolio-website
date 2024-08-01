@@ -8,14 +8,14 @@ import { Component } from '@angular/core';
 export class EducationComponent {
   public education = [
     {
-      course: 'Ciência da Computação',
+      name: 'Ciência da Computação',
       period: 'Mar 2019/dez 2021',
       university: 'UNIFEI - Universidade Federal de Itajubá',
       status: `Incompleto`,
       side: 'left',
     },
     {
-      course: 'Bacharel em Ciência e Tecnologia',
+      name: 'Bacharel em Ciência e Tecnologia',
       period: 'Mar 2013/set 2017',
       university:
         'UFVJM - Universidade Federal dos Vales do Jequitinhonha e Mucuri',
@@ -23,7 +23,7 @@ export class EducationComponent {
       side: 'right',
     },
     {
-      course: 'Técnico em Informática',
+      name: 'Técnico em Informática',
       period: 'Mar 2009/jul 2010',
       university: 'ETRL - Escola Técnica Rural Luterana',
       status: `Completo`,
