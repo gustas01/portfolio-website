@@ -23,7 +23,7 @@ export class ExperiencesComponent {
       description: `Na Luz pude atuar tanto no backend quanto no frontend (com foco no frontend) onde trabalhei
       tecnologias modernas na construção da calculadora de renda fixa na nuvem da empresa.`,
       technologies: ['Angular', 'Jasmine', 'Selenium'],
-      side: 'left',
+      side: 'right',
     },
   ];
 }

@@ -84,7 +84,7 @@ mat-card{
 
 .round-button-links{
   overflow: hidden;
-  
+
   &::before{
     position: absolute;
     content: '';
@@ -101,7 +101,7 @@ mat-card{
   }
 
   &::after{
-    position: absolute;  
+    position: absolute;
     content: '';
     background-color: #222;
     border-radius: 50%;
@@ -118,7 +118,7 @@ mat-card{
 
   &::before{
     position: absolute;
-    content: ''; 
+    content: '';
     height: 36px;
     width: 161px;
     background-color: #ee7;
