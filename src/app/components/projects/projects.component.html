@@ -4,17 +4,19 @@
     <mat-expansion-panel *ngIf="repo.description && repo.language">
       <mat-expansion-panel-header>
         <mat-panel-title>
-          {{repo.name}}
+          {{ repo.name }}
         </mat-panel-title>
       </mat-expansion-panel-header>
-      <p>{{repo.description}}</p>
+      <p>{{ repo.description }}</p>
       <span>
         <span>
           <mat-chip cdkDrag *ngFor="let languages of repo.languages">
-            {{languages}}
+            {{ languages }}
           </mat-chip>
         </span>
-        <a [href]="repo.html_url" target="_blank"><mat-icon>link</mat-icon></a>
+        <a [href]="repo.html_url" target="_blank" mat-stroked-button color="accent">
+          VER NO GITHUB
+        </a>
       </span>
     </mat-expansion-panel>
   </mat-accordion>
