@@ -19,14 +19,16 @@ header {
   }
 }
 
-.language_radio {
+.language_selection {
   position: absolute;
-  top: 12px;
+  top: 16px;
   right: 12px;
-  z-index: 3;
   background-color: #333;
-  padding-right: 12px;
   border-radius: 4px;
+}
+.language_radio {
+  display: flex;
+  flex-direction: column;
 }
 
 mat-card {
@@ -74,7 +76,7 @@ mat-card {
   }
 
   .button-downloadcv {
-    width: 50%;
+    // width: 50%;
     align-self: center;
     background-color: $primary-color;
     margin-top: 12px;
@@ -132,7 +134,7 @@ mat-card {
     position: absolute;
     content: '';
     height: 36px;
-    width: 161px;
+    width: fit-content;
     background-color: #ee7;
     border-radius: 8px;
     z-index: -1;
@@ -141,8 +143,8 @@ mat-card {
   }
 
   &:hover::before {
-    height: 40px;
-    width: 165px;
+    padding: 2px;
+    width: 100%;
   }
 
   @keyframes color-changing {

@@ -10,6 +10,7 @@ import { MatExpansionModule } from '@angular/material/expansion';
 import { MatIconModule } from '@angular/material/icon';
 import { MatTabsModule } from '@angular/material/tabs';
 import { MatRadioModule } from '@angular/material/radio';
+import { MatMenuModule } from '@angular/material/menu';
 
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
@@ -47,6 +48,7 @@ import { FormsModule } from '@angular/forms';
     MatChipsModule,
     MatRadioModule,
     FormsModule,
+    MatMenuModule,
   ],
   providers: [],
   bootstrap: [AppComponent],

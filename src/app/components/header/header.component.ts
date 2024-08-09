@@ -1,5 +1,5 @@
 import { Component, signal } from '@angular/core';
-import { Router } from '@angular/router';
+import { MatRadioChange } from '@angular/material/radio';
 
 @Component({
   selector: 'app-header',
@@ -7,5 +7,9 @@ import { Router } from '@angular/router';
   styleUrls: ['./header.component.scss'],
 })
 export class HeaderComponent {
-  languange = 'pt-br';
+  languange = window.location.pathname;
+
+  changeLanguage(language: MatRadioChange) {
+    window.location.assign(`${window.location.origin}${language.value}`);
+  }
 }

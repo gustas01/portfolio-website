@@ -1,20 +1,28 @@
 <section>
-  <h1>Principais projetos</h1>
+  <h1 i18n>Principais projetos</h1>
   <mat-accordion id="i" *ngFor="let repo of repos">
     <mat-expansion-panel *ngIf="repo.description && repo.language">
       <mat-expansion-panel-header>
-        <mat-panel-title>
+        <mat-panel-title aria-label="Nome do repositório" i18n-aria-label>
           {{ repo.name }}
         </mat-panel-title>
       </mat-expansion-panel-header>
       <p>{{ repo.description }}</p>
       <span>
-        <span>
+        <span aria-label="Linguagens utilizadas" i18n-aria-label>
           <mat-chip cdkDrag *ngFor="let languages of repo.languages">
             {{ languages }}
           </mat-chip>
         </span>
-        <a [href]="repo.html_url" target="_blank" mat-stroked-button color="accent">
+        <a
+          [href]="repo.html_url"
+          target="_blank"
+          mat-stroked-button
+          color="accent"
+          aria-label="Botão para ver no github"
+          i18n
+          i18n-aria-label
+        >
           VER NO GITHUB
         </a>
       </span>
