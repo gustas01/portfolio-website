@@ -5,7 +5,7 @@
   "projects": {
     "portfolio": {
       "i18n": {
-        "sourceLocale": "pt-BR",
+        "sourceLocale": "pt-br",
         "locales": {
           "en": {
             "baseHref": "en/",

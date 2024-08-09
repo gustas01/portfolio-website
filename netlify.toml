@@ -2,8 +2,8 @@
   publish = "dist"
 
 [[redirects]]
-  from = "/pt-BR/*"
-  to = "/pt-BR/:splat"
+  from = "/pt-br/*"
+  to = "/pt-br/:splat"
   status = 200
 
 [[redirects]]
@@ -13,5 +13,5 @@
 
 [[redirects]]
   from = "/"
-  to = "/pt-BR/"
+  to = "/pt-br/"
   status = 302

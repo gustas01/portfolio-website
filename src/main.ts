@@ -8,7 +8,7 @@ import { registerLocaleData } from '@angular/common';
 import localePt from '@angular/common/locales/pt';
 import localePtExtra from '@angular/common/locales/extra/pt';
 
-registerLocaleData(localePt, 'pt-BR', localePtExtra);
+registerLocaleData(localePt, 'pt-br', localePtExtra);
 
 platformBrowserDynamic()
   .bootstrapModule(AppModule)
