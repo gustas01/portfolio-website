@@ -1,4 +1,4 @@
-<section>
+<section *ngIf="repos.length > 0">
   <h1 i18n>Principais projetos</h1>
   <mat-accordion id="i" *ngFor="let repo of repos">
     <mat-expansion-panel *ngIf="repo.description && repo.language">

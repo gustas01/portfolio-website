@@ -13,12 +13,10 @@ export class ProjectsComponent implements OnInit {
   repos: RepositoryModel[] = [];
 
   ngOnInit(): void {
-    this.projectsService
-      .getRepos('https://api.github.com/users/gustas01/repos')
-      .subscribe({
-        next: (res) => {
-          this.repos = res;
-        },
-      });
+    this.projectsService.getRepos('https://api.github.com/users/gustas01/repos').subscribe({
+      next: (res) => {
+        this.repos = res;
+      },
+    });
   }
 }
