@@ -8,28 +8,52 @@ $accent-color: rgba(17, 112, 94, 1);
 $my-palette: (
   100: $primary-color,
   700: $accent-color,
-  contrast: ()
+  contrast: (),
 );
 
 $custom-app-primary: mat.define-palette($my-palette, 100);
 $custom-app-accent: mat.define-palette($my-palette, 700);
 $custom-app-warn: mat.define-palette(mat.$red-palette);
 
-$custom-theme: mat.define-dark-theme((
-  color: (
-    primary: $custom-app-primary,
-    accent: $custom-app-accent,
-    warn: $custom-app-warn
-  ),
-  typography: mat.define-typography-config(),
-  density: 0
-));
+$custom-theme: mat.define-dark-theme(
+  (
+    color: (
+      primary: $custom-app-primary,
+      accent: $custom-app-accent,
+      warn: $custom-app-warn,
+    ),
+    typography: mat.define-typography-config(),
+    density: 0,
+  )
+);
 
 // @include mat.all-component-themes($custom-theme);
 
+html,
+body {
+  height: 100%;
+}
+body {
+  margin: 0;
+  font-family: Roboto, 'Helvetica Neue', sans-serif;
+  color: #dcdcdc;
+  background-color: #292929;
+  height: fit-content;
+}
+section {
+  margin: 2% 0;
+}
 
+::-webkit-scrollbar {
+  background-color: #333;
+  border-radius: 0.5rem;
+}
 
+::-webkit-scrollbar-thumb {
+  background-color: #555;
+  border-radius: 8px;
+}
 
-html, body { height: 100%; }
-body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; color: #dcdcdc; background-color: #292929; height: fit-content;}
-section{margin: 2% 0;}
+::-webkit-scrollbar-thumb:hover {
+  background-color: #444;
+}
