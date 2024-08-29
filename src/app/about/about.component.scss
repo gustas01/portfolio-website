@@ -1,0 +1,12 @@
+@import "../../styles.scss";
+
+section {
+  color: $primary-color-text;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+
+  p {
+    text-align: justify;
+  }
+}
