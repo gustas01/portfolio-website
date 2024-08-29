@@ -1,0 +1,61 @@
+@import "../../styles.scss";
+
+header {
+  color: $primary-color-text;
+  display: flex;
+  justify-content: center;
+  // width: 80%;
+  padding: 1%;
+  gap: 2rem;
+
+  align-items: center;
+  background-image: url("../../assets/images/bg12.png");
+  background-attachment: fixed;
+  background-size: cover;
+  background-repeat: no-repeat;
+
+  a {
+    border-radius: 4px;
+    min-width: 111px;
+  }
+}
+
+.language_selection {
+  position: absolute;
+  top: 16px;
+  right: 12px;
+  background-color: #333;
+  border-radius: 4px;
+}
+.language_radio {
+  display: flex;
+  flex-direction: column;
+}
+
+mat-card {
+  width: fit-content;
+  z-index: 2;
+  // margin: 16px 0;
+  padding: 4px;
+  // background-color: #292929;
+
+  mat-card-actions {
+    display: flex;
+    gap: 4px;
+  }
+
+  .button-downloadcv {
+    border-radius: 4px 4px 12px 12px;
+
+    span {
+      display: flex;
+      align-items: center;
+    }
+  }
+}
+
+@media (max-width: 490px) {
+  .language_selection {
+    display: none;
+  }
+}
