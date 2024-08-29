@@ -4,7 +4,6 @@ header {
   color: $primary-color-text;
   display: flex;
   justify-content: center;
-  // width: 80%;
   padding: 1%;
   gap: 2rem;
 
@@ -16,7 +15,20 @@ header {
 
   a {
     border-radius: 4px;
-    min-width: 111px;
+    min-width: fit-content;
+    display: flex;
+    align-items: center;
+
+    .a_content {
+      display: flex;
+      align-items: center;
+      gap: 4px;
+    }
+
+    img {
+      width: 1.5rem;
+      height: 1.5rem;
+    }
   }
 }
 
