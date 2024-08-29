@@ -1,0 +1,7 @@
+<h4 i18n>Tecnologias já utilizadas</h4>
+<div class="content">
+  <mat-card matRipple *ngFor="let stack of stacks">
+    <img [src]="stack.path" [alt]="stack.svgName + '_icon_cian'" />
+    <mat-card-title>{{ stack.name }}</mat-card-title>
+  </mat-card>
+</div>
