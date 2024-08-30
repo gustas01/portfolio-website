@@ -3,4 +3,13 @@
 <main>
   <app-about />
   <app-stacks />
+
+  <mat-tab-group color="accent" dynamicHeight>
+    <mat-tab label="Experiências" i18n-label>
+      <app-experiences></app-experiences>
+    </mat-tab>
+    <mat-tab label="Formação" i18n-label>
+      <app-education></app-education>
+    </mat-tab>
+  </mat-tab-group>
 </main>

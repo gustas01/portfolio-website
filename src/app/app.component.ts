@@ -1,13 +1,26 @@
 import { Component } from '@angular/core';
 import { RouterOutlet } from '@angular/router';
+
+import { MatTabsModule } from '@angular/material/tabs';
+
 import { HeaderComponent } from './header/header.component';
 import { AboutComponent } from './about/about.component';
 import { StacksComponent } from './stacks/stacks.component';
+import { ExperiencesComponent } from './experiences/experiences.component';
+import { EducationComponent } from './education/education.component';
 
 @Component({
   selector: 'app-root',
   standalone: true,
-  imports: [RouterOutlet, HeaderComponent, AboutComponent, StacksComponent],
+  imports: [
+    RouterOutlet,
+    MatTabsModule,
+    HeaderComponent,
+    AboutComponent,
+    StacksComponent,
+    ExperiencesComponent,
+    EducationComponent,
+  ],
   templateUrl: './app.component.html',
   styleUrl: './app.component.scss',
 })

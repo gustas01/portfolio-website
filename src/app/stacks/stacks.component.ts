@@ -44,6 +44,16 @@ export class StacksComponent {
       path: 'assets/icons/stacks/java_icon.svg',
     },
     {
+      name: 'CSharp',
+      svgName: 'csharp',
+      path: 'assets/icons/stacks/csharp_icon.svg',
+    },
+    {
+      name: 'Asp .Net Core',
+      svgName: 'asp net',
+      path: 'assets/icons/stacks/dotnet_icon.svg',
+    },
+    {
       name: 'Jest',
       svgName: 'jest',
       path: 'assets/icons/stacks/jest_icon.svg',
