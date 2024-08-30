@@ -1,1 +1,11 @@
-<p>education works!</p>
+<div class="timeline" *ngFor="let course of education">
+  <div class="container" [ngClass]="course.side">
+    <div class="content">
+      <div class="title-period">
+        <h3>{{ course.name }}</h3>
+        <p>{{ course.period }} - {{ course.status }}</p>
+      </div>
+      <h4>{{ course.university }}</h4>
+    </div>
+  </div>
+</div>
