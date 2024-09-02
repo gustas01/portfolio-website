@@ -1,0 +1,49 @@
+<section *ngIf="repos.length > 0">
+  <h2 i18n>Principais projetos</h2>
+
+  <div class="projects_grid">
+    <ng-container *ngFor="let project of repos">
+      <mat-card
+        appearance="raised"
+        *ngIf="project.description && project.language"
+      >
+        <img
+          [src]="
+            'assets/icons/stacks/' +
+            project.language.toLowerCase().replace('#', 'sharp') +
+            '_icon_cian.svg'
+          "
+          [alt]="project.language + '_icon'"
+          i18n-alt
+        />
+        <mat-card-title>{{ project.name }}</mat-card-title>
+        <mat-card-content>{{ project.description }}</mat-card-content>
+        <mat-card-footer>
+          <span style="display: flex; flex-direction: column; gap: 8px">
+            <span
+              aria-label="Linguagens utilizadas"
+              i18n-aria-label
+              style="display: flex; gap: 4px"
+            >
+              <mat-chip cdkDrag *ngFor="let language of project.languages">
+                {{ language }}
+              </mat-chip>
+            </span>
+            <a
+              [href]="project.html_url"
+              target="_blank"
+              mat-stroked-button
+              color="accent"
+              aria-label="Botão para ver no github"
+              i18n
+              i18n-aria-label
+              style="width: fit-content; align-self: center; border-radius: 4px"
+            >
+              VER NO GITHUB
+            </a>
+          </span>
+        </mat-card-footer>
+      </mat-card>
+    </ng-container>
+  </div>
+</section>

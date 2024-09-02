@@ -1,0 +1,27 @@
+@import "../../styles.scss";
+
+section {
+  color: $primary-color-text;
+
+  .projects_grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
+    gap: 10px;
+
+    mat-card {
+      padding: 8px;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+
+      mat-card-content {
+        color: gray;
+        margin: 8px 0;
+      }
+
+      img {
+        height: 5rem;
+      }
+    }
+  }
+}
