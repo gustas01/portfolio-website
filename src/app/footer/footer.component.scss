@@ -1,0 +1,29 @@
+main {
+  margin: 0 5%;
+}
+
+.footer_toolbar {
+  padding: 0 5%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 1rem;
+  font-weight: 300;
+
+  .language_flags_container {
+    display: flex;
+    align-items: center;
+
+    .language_flags {
+      width: 2rem !important;
+      height: fit-content;
+      margin-left: 8px;
+      border-radius: 4px;
+      cursor: pointer;
+
+      img {
+        width: 100%;
+      }
+    }
+  }
+}

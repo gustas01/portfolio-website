@@ -1,0 +1,29 @@
+<footer>
+  <mat-toolbar class="footer_toolbar">
+    <span i18n>&copy; Todos os direitos reservados!</span>
+    <span class="language_flags_container">
+      <mat-icon
+        mat-ripple
+        class="language_flags"
+        (click)="changeLanguage('/pt-br/')"
+      >
+        <img
+          src="assets/icons/brazil_flag.png"
+          alt="bandeira do Brasil"
+          i18n-alt
+        />
+      </mat-icon>
+      <mat-icon
+        mat-ripple
+        class="language_flags"
+        (click)="changeLanguage('/en/')"
+      >
+        <img
+          src="assets/icons/usa_flag.png"
+          alt="bandeira dos Estados Unidos"
+          i18n-alt
+        />
+      </mat-icon>
+    </span>
+  </mat-toolbar>
+</footer>
