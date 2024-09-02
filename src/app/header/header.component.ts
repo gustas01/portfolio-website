@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, Renderer2 } from '@angular/core';
 
 import { MatButtonModule } from '@angular/material/button';
 import { MatDividerModule } from '@angular/material/divider';
@@ -28,5 +28,15 @@ export class HeaderComponent {
 
   changeLanguage(language: MatRadioChange) {
     window.location.assign(`${window.location.origin}${language.value}`);
+  }
+
+  constructor(private renderer: Renderer2) {}
+
+  addCustomStyles() {
+    const menuPanel = document.querySelector('.mat-mdc-menu-panel');
+    if (menuPanel) {
+      this.renderer.setStyle(menuPanel, 'min-width', 'fit-content');
+      this.renderer.setStyle(menuPanel, 'padding-right', '8px');
+    }
   }
 }

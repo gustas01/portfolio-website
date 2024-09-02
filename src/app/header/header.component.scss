@@ -39,9 +39,15 @@ header {
   background-color: #333;
   border-radius: 4px;
 }
+
 .language_radio {
   display: flex;
   flex-direction: column;
+
+  img {
+    cursor: pointer;
+    width: 2rem;
+  }
 }
 
 mat-card {
