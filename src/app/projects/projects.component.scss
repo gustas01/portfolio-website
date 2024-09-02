@@ -14,9 +14,17 @@ section {
       flex-direction: column;
       justify-content: space-between;
 
+      transition: box-shadow 0.25s;
+      // transition: filter 0.25s;
+
+      &:hover {
+        box-shadow: 0 0px 16px rgba(255, 255, 255, 0.2);
+        // filter: brightness(1.2);
+      }
+
       mat-card-content {
         color: gray;
-        margin: 8px 0;
+        margin: 0.5rem 0;
       }
 
       img {

@@ -17,6 +17,11 @@ mat-card {
   box-shadow: 2px 2px 5px black;
   padding: 5px;
   background-color: #424242;
+  transition: transform 0.25s;
+
+  &:hover {
+    transform: scale(1.05);
+  }
 
   img {
     width: 100%;
