@@ -15,7 +15,6 @@ header {
 
   a {
     border-radius: 4px;
-    min-width: fit-content;
     display: flex;
     align-items: center;
 
@@ -52,9 +51,7 @@ header {
 mat-card {
   width: fit-content;
   z-index: 2;
-  // margin: 16px 0;
   padding: 4px;
-  // background-color: #292929;
 
   mat-card-actions {
     display: flex;
@@ -74,5 +71,11 @@ mat-card {
 @media (max-width: 530px) {
   .language_selection {
     display: none;
+  }
+}
+
+@media (max-width: 410px) {
+  mat-card {
+    width: 100%;
   }
 }
