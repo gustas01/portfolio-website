@@ -14,9 +14,8 @@
       class="language_radio"
       [value]="languange"
       (change)="changeLanguage($event)"
-      i18n-aria-label
     >
-      <mat-radio-button value="/pt-br/"
+      <mat-radio-button value="/pt/"
         ><img
           src="assets/icons/brazil_flag.png"
           alt="bandeira do Brasil"
@@ -47,10 +46,11 @@
     <mat-card-actions>
       <a
         mat-flat-button
-        i18n
         title="Linkedin"
         href="https://www.linkedin.com/in/gustavohdlima/"
         target="_blank"
+        aria-label="Botão para acessar Linkedin"
+        i18n-aria-label
       >
         <span class="a_content">
           <img
@@ -63,10 +63,11 @@
       </a>
       <a
         mat-flat-button
-        i18n
         title="Github"
         href="https://github.com/gustas01"
         target="_blank"
+        aria-label="Botão para acessar Github"
+        i18n-aria-label
       >
         <span class="a_content">
           <img
@@ -79,9 +80,10 @@
       </a>
       <a
         mat-flat-button
-        i18n
         title="Enviar email"
         href="mailto:gustavohdlima@hotmail.com"
+        aria-label="Botão para enviar email"
+        i18n-aria-label
       >
         <span class="a_content">
           <img
