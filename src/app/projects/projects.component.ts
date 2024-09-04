@@ -42,6 +42,7 @@ export class ProjectsComponent implements OnInit {
           this.filteredRepos = this.repos;
 
           this.repos
+            .filter((repo) => repo.description)
             .map((el) => el.language)
             .forEach((lan) => {
               if (lan !== null) this.languages.add(lan);
