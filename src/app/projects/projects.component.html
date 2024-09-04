@@ -1,8 +1,25 @@
 <section *ngIf="repos.length > 0">
   <h2 i18n>Principais projetos</h2>
 
+  <form>
+    <mat-form-field>
+      <mat-label i18n>Filtrar por linguagem</mat-label>
+      <mat-select
+        [(ngModel)]="filteredLanguage"
+        name="linguagem"
+        i18n-name
+        (ngModelChange)="filterLanguage()"
+      >
+        <mat-option [value]="" i18n>Todas</mat-option>
+        @for (language of languages; track language) {
+        <mat-option [value]="language">{{ language }}</mat-option>
+        }
+      </mat-select>
+    </mat-form-field>
+  </form>
+
   <div class="projects_grid">
-    <ng-container *ngFor="let project of repos">
+    <ng-container *ngFor="let project of filteredRepos">
       <mat-card
         appearance="raised"
         *ngIf="project.description && project.language"
