@@ -11,17 +11,25 @@ import { Component } from '@angular/core';
 export class ExperiencesComponent {
   public experiences = [
     {
+      role: $localize`Desenvolvedor fullstack júnior`,
+      period: $localize`Jan 2025 – até o momento`,
+      company: $localize`BTG Pactual`,
+      description: $localize`Desenvolvimento e manutenção de aplicações de larga escala do mercado financeiro.`,
+      technologies: ['.NET', 'C#', 'Angular', 'Typescript'],
+      side: 'right',
+    },
+    {
       role: $localize`Trainee de desenvolvimento fullstack`,
-      period: $localize`Abr 2024–até o momento`,
+      period: $localize`Abr 2024 – até o momento`,
       company: $localize`FCAMARA - Consultoria e formação em Informática`,
       description: $localize`Estudo desenvolvimento fullstack para me aprimorar e contribuir no desenvolvimento de soluções
       funcionais, escaláveis e consistentes.`,
-      technologies: ['Spring', 'Java', 'Angular', 'Typescript'],
+      technologies: ['.NET', 'C#', 'Angular', 'Typescript'],
       side: 'left',
     },
     {
       role: $localize`Desenvolvedor Júnior`,
-      period: $localize`Mar 2022–Ago 2022`,
+      period: $localize`Mar 2022 – Ago 2022`,
       company: $localize`Luz - Soluções Financeiras`,
       description: $localize`Na Luz pude atuar tanto no backend quanto no frontend (com foco no frontend) onde trabalhei
       tecnologias modernas na construção da calculadora de renda fixa na nuvem da empresa.`,
