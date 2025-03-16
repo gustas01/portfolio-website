@@ -16,7 +16,7 @@ export class ExperiencesComponent {
       company: $localize`BTG Pactual`,
       description: $localize`Desenvolvimento e manutenção de aplicações de larga escala do mercado financeiro.`,
       technologies: ['.NET', 'C#', 'Angular', 'Typescript'],
-      side: 'right',
+      side: 'left',
     },
     {
       role: $localize`Trainee de desenvolvimento fullstack`,
@@ -25,7 +25,7 @@ export class ExperiencesComponent {
       description: $localize`Estudo desenvolvimento fullstack para me aprimorar e contribuir no desenvolvimento de soluções
       funcionais, escaláveis e consistentes.`,
       technologies: ['.NET', 'C#', 'Angular', 'Typescript'],
-      side: 'left',
+      side: 'right',
     },
     {
       role: $localize`Desenvolvedor Júnior`,
@@ -34,7 +34,7 @@ export class ExperiencesComponent {
       description: $localize`Na Luz pude atuar tanto no backend quanto no frontend (com foco no frontend) onde trabalhei
       tecnologias modernas na construção da calculadora de renda fixa na nuvem da empresa.`,
       technologies: ['Angular', 'Jasmine', 'Selenium'],
-      side: 'right',
+      side: 'left',
     },
   ];
 }
