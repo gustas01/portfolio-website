@@ -12,7 +12,7 @@ export class ExperiencesComponent {
   public experiences = [
     {
       role: $localize`Desenvolvedor fullstack júnior`,
-      period: $localize`Jan 2025 – até o momento`,
+      period: $localize`Out 2024 – até o momento`,
       company: $localize`BTG Pactual`,
       description: $localize`Desenvolvimento e manutenção de aplicações de larga escala do mercado financeiro.`,
       technologies: ['.NET', 'C#', 'Angular', 'Typescript'],
